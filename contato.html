@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Refúgio da Moda</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="imgs/fashion.png" type="image/x-icon">
+    <style>
+        /* Estilos específicos apenas para a página de contato */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .contact-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="pageTitle">Refúgio da Moda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="introduction">
+            <h2>Entre em Contato</h2>
+            <p>Estamos sempre abertos para responder suas dúvidas, ouvir sugestões ou discutir parcerias.</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-item">
+                <img src="imgs/email-icon.webp" alt="Ícone de e-mail">
+                <h3>E-mail</h3>
+                <p>contato@refugiodamoda.com.br</p>
+                <p>Responderemos em até 48 horas úteis</p>
+            </div>
+
+            <div class="contact-item">
+                <img src="imgs/whatsapp-icon.webp" alt="Ícone do WhatsApp">
+                <h3>WhatsApp</h3>
+                <p>(11) 98765-4321</p>
+                <p>Atendimento: Segunda a Sexta, 9h às 18h</p>
+            </div>
+
+            <div class="contact-item">
+                <img src="imgs/instagram-icon.webp" alt="Ícone do Instagram">
+                <h3>Instagram</h3>
+                <p>@refugio_da_moda</p>
+                <p>Siga-nos para novidades diárias</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Refúgio da Moda</h2>
+
+        <ul>
+            <li><b style="font-size: 19px;">Autores:</b></li>
+            <li>Adrien Bezerra</li>
+            <li>Felipe Araújo</li>
+            <li>Fernando Mendonça</li>
+            <li>Gabriel Laurindo</li>
+            <li>Gabriel Veríssimo</li>
+            <li>Yan Bezerra</li>
+        </ul>
+    </footer>
+</body>
+</html>

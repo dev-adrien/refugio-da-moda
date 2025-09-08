@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+    font-size: 1.2rem;
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os preenchimentos padrão */
+}
+
+/* Estilização dos links */
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+    color: crimson; /* Muda a cor do link quando o mouse passa por cima */
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f3deb8; /* Cor de fundo bege claro */
+    color: #000000; /* Cor do texto preto */
+}
+
+/* Estilo para todas as divs */
+div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.613), 0 6px 20px 0 rgba(0, 0, 0, 0.25); /* Adiciona sombra às divs */
+}
+
+/* Estilo do rodapé */
+footer {
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #e1c666; /* Cor de fundo dourado */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Estilo do cabeçalho */
+header {
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #e1c666; /* Cor de fundo dourado */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Centraliza os títulos */
+h1, h2, h3 {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dos títulos */
+}
+
+/* Estilo dos itens de lista */
+li {
+    margin: 10px 18px; /* Espaçamento externo vertical e horizontal */
+}
+
+p {
+    margin: 15px 0px;
+}
+
+/* Estilo das seções */
+section {
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 10px 20px;
+}
+
+/* Remove os marcadores de lista */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão das listas */
+}
+
+/* Estilo da lista de links no menu */
+nav ul {
+    display: flex; /* Layout flexível horizontal */
+    list-style: none; /* Remove os marcadores da lista */
+    justify-content: center; /* Centraliza os itens do menu */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilo da seção principal */
+.main {
+    margin: 20px; /* Espaçamento externo */
+    padding: 15px; /* Espaçamento interno */
+    border: solid black 3px; /* Borda preta sólida */
+    border-radius: 6px; /* Cantos arredondados */
+}
+
+/* Estilo das seções dentro da área principal */
+.main section {
+    border: solid black 1.5px; /* Borda preta mais fina */
+    margin: 10px; /* Espaçamento externo */
+}
+
+/* Layout em grid para o container */
+.container {
+    align-items: stretch; /* Estica os itens para ocupar o espaço vertical */
+    display: grid; /* Layout em grade */
+    gap: 20px 10px; /* Espaçamento entre linhas e colunas */
+    grid-template-areas: 
+    'item1 item2'
+    'item1 item2'; /* Define as áreas do grid */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo das divs dentro do container */
+.container > div {
+    border: .75px black solid; /* Borda preta fina */
+    margin: 10px; /* Espaçamento externo */
+}
+
+/* Posicionamento dos itens no grid */
+.item1 {
+    border-radius: 6px;
+    grid-area: item1; /* Define esta área como item1 no grid */
+    text-align: start; /* Alinha o texto à esquerda */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+.item2 {
+    align-items: center;
+    grid-area: item2; /* Define esta área como item2 no grid */
+}
+
+/* Media Queries para Design Responsivo */
+
+/* Dispositivos Móveis (até 767px) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Empilha os itens do menu verticalmente */
+    }
+    
+    #linkList li {
+        margin: 8px 0; /* Ajusta as margens verticais e remove as horizontais */
+    }
+    
+    .container {
+        grid-template-areas: 
+            'item1'
+            'item2'; /* Redefine as áreas para uma coluna única */
+        gap: 15px 0; /* Ajusta o espaçamento entre linhas, remove entre colunas */
+    }
+    
+    .main {
+        margin: 10px; /* Reduz a margem externa */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+    
+    .main section {
+        margin: 8px 0; /* Ajusta as margens verticais */
+    }
+    
+    footer {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        gap: 15px; /* Adiciona espaçamento entre os elementos */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Tamanho de fonte menor para títulos */
+    }
+    
+    h2 {
+        font-size: 1.3rem; /* Tamanho de fonte menor para subtítulos */
+    }
+    
+    img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+/* Tablets (768px até 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        gap: 15px; /* Ajusta o espaçamento entre os elementos */
+    }
+    
+    .main {
+        margin: 15px; /* Ajusta a margem externa */
+    }
+    
+    img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    nav ul {
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+}
+
+/* Garante que as imagens sejam responsivas em todos os dispositivos */
+img {
+    max-width: 100%; /* Limita a largura máxima ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
