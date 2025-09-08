@@ -132,74 +132,73 @@ nav ul {
 /* Dispositivos Móveis (até 767px) */
 @media screen and (max-width: 767px) {
     header {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        padding: 10px; /* Reduz o espaçamento interno */
+        flex-direction: column;
+        padding: 10px;
     }
     
     nav ul {
-        flex-direction: column; /* Empilha os itens do menu verticalmente */
+        flex-direction: column;
     }
     
     .container {
         grid-template-areas: 
             'item1'
-            'item2'; /* Redefine as áreas para uma coluna única */
-        gap: 15px 0; /* Ajusta o espaçamento entre linhas, remove entre colunas */
+            'item2';
+        gap: 15px 0;
     }
     
     .main {
-        margin: 10px; /* Reduz a margem externa */
-        padding: 10px; /* Reduz o espaçamento interno */
+        margin: 10px;
+        padding: 10px;
     }
     
     .main section {
-        margin: 8px 0; /* Ajusta as margens verticais */
+        margin: 8px 0;
     }
     
     footer {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
-        text-align: center; /* Centraliza o texto */
-        gap: 15px; /* Adiciona espaçamento entre os elementos */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
     
     h1 {
-        font-size: 1.5rem; /* Tamanho de fonte menor para títulos */
+        font-size: 1.5rem;
     }
     
     h2 {
-        font-size: 1.3rem; /* Tamanho de fonte menor para subtítulos */
+        font-size: 1.3rem;
     }
     
     img {
-        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
-        height: auto; /* Mantém a proporção da imagem */
+        max-width: 100%;
+        height: auto;
     }
 }
 
 /* Tablets (768px até 991px) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container {
-        gap: 15px; /* Ajusta o espaçamento entre os elementos */
+        gap: 15px;
     }
     
     .main {
-        margin: 15px; /* Ajusta a margem externa */
+        margin: 15px;
     }
     
     img {
-        max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
-        height: auto; /* Mantém a proporção da imagem */
+        max-width: 100%;
+        height: auto;
     }
     
     nav ul {
-        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-        justify-content: center; /* Centraliza os itens horizontalmente */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
-/* Garante que as imagens sejam responsivas em todos os dispositivos */
 img {
-    max-width: 100%; /* Limita a largura máxima ao contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%;
+    height: auto;
 }
