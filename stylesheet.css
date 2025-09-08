@@ -140,10 +140,6 @@ nav ul {
         flex-direction: column; /* Empilha os itens do menu verticalmente */
     }
     
-    #linkList li {
-        margin: 8px 0; /* Ajusta as margens verticais e remove as horizontais */
-    }
-    
     .container {
         grid-template-areas: 
             'item1'
@@ -207,4 +203,3 @@ img {
     max-width: 100%; /* Limita a largura máxima ao contêiner */
     height: auto; /* Mantém a proporção da imagem */
 }
-
